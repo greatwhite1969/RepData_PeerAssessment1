@@ -70,8 +70,8 @@ mean_spd <- mean(total$total)
 med_spd <- median(total$total)
 ```
 
-The mean total steps per day is `r mean_spd`.  
-The median total steps per day is `r med_spd`.
+**The mean total steps per day is `r mean_spd`.**   
+**The median total steps per day is `r med_spd`.**
 
 
 
@@ -104,7 +104,7 @@ We can obtain the 5-minute interval with maximum number of steps with which.max.
 max_int <- int$interval[which(int$mean == max(int$mean))]
 ```
 
-The 5-minute interval with the maximum number of steps is `r max_int`.
+**The 5-minute interval with the maximum number of steps is `r max_int`.**
 
 
 
@@ -118,7 +118,7 @@ minus the number of rows in the dataset with NAs removed.
 num_na <- nrow(activity) - sum(full)
 ```
 
-The number of missing values is `r num_na`.
+**The number of missing values is `r num_na`.**
 
 
 We will replace missing values with the average steps for the associated 5-minute interval. 
@@ -168,8 +168,8 @@ mean_spd_imp <- mean(total_imp$total, 2)
 med_spd_imp <- median(total_imp$total, 2)
 ```
 
-The mean total steps per day is `r mean_spd_imp`.  
-The median total steps per day is `r med_spd_imp`.
+**The mean total steps per day is `r mean_spd_imp`.**  
+**The median total steps per day is `r med_spd_imp`.**
 
 
 
